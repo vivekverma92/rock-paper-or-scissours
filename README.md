@@ -1,2 +1,19 @@
 # rock-paper-or-scissours
 a simple rock paper scissours
+import random
+
+user = input("Choose rock, paper, or scissors: ")
+computer = random.choice(["rock", "paper", "scissors"])
+
+print("Computer chose:", computer)
+
+if user == computer:
+    print("Tie!")
+elif user == "rock" and computer == "scissors":
+    print("You win!")
+elif user == "paper" and computer == "rock":
+    print("You win!")
+elif user == "scissors" and computer == "paper":
+    print("You win!")
+else:
+    print("Computer wins!")
