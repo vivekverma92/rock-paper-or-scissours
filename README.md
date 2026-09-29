@@ -1,19 +1,2 @@
-# rock-paper-or-scissours
-a simple rock paper scissours
-import random
 
-user = input("Choose rock, paper, or scissors: ")
-computer = random.choice(["rock", "paper", "scissors"])
-
-print("Computer chose:", computer)
-
-if user == computer:
-    print("Tie!")
-elif user == "rock" and computer == "scissors":
-    print("You win!")
-elif user == "paper" and computer == "rock":
-    print("You win!")
-elif user == "scissors" and computer == "paper":
-    print("You win!")
-else:
-    print("Computer wins!")
+This Python program is used to create a simple Rock-Paper-Scissors game between the user and the computer. First, the random module is imported to allow the computer to make a random choice. The user is asked to choose rock, paper, or scissors, and the computer randomly selects one of these three options. The program then displays the computer’s choice and compares it with the user’s choice using if, elif, and else statements. If both choices are the same, the result is a Tie. Otherwise, according to the rules of Rock-Paper-Scissors, the program displays You Win or Computer Wins. This program demonstrates the use of input, random selection, conditional statements, and comparison operators in Python.
